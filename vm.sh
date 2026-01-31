@@ -17,7 +17,7 @@ echoh() {
 echo_coder_postinstall() {
   echoh
   echo "========================================================================"
-  echo "                    POWERED BY DeUp Gaming"
+  echo -e "                    ${GREEN}POWERED BY DeUp Gaming${RESET}"
   echo "========================================================================"
   echo "For any help- Join Our Discord Server https://discord.gg/V6CrWhyh3M"
   echoh
@@ -71,7 +71,7 @@ clear
 echo_coder_postinstall() {
   echoh
   echo "========================================================================"
-  echo "                    POWERED BY DeUp Gaming"
+  echo -e "              ${GREEN}POWERED BY DeUp Gaming${RESET}"
   echo "========================================================================"
   echo "For any help- Join Our Discord Server https://discord.gg/V6CrWhyh3M"
   echoh
