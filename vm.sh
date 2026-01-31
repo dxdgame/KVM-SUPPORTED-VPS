@@ -31,13 +31,14 @@ sleep 5
 # Clear terminal after cooldown
 clear
 
-echo -e "${YELLOW}[Warn]${RESET} Updating system packages..."
+echo -e "${YELLOW}[INFO]${RESET} Updating system packages..."
 sleep 2
 sudo apt update
+sudo apt install gpg -y
 
 clear
 
-echo -e "${YELLOW}[Warn]${RESET} Installing required packages..."
+echo -e "${YELLOW}[INFO]${RESET} Installing required packages..."
 sleep 2
 sudo apt install -y \
   qemu-system-x86 \
@@ -48,13 +49,13 @@ sudo apt install -y \
 
 clear
 
-echo -e "${YELLOW}[Warn]${RESET} Downloading Ubuntu QCOW2 image..."
+echo -e "${YELLOW}[INFO]${RESET} Downloading Ubuntu QCOW2 image..."
 sleep 2
 wget -O ubuntu.qcow2 "https://download1335.mediafire.com/o6gtu7bcpaagOqT6TCjyWuEZ8aKZJUDYWHoTx1B_s3IGLKwTG08gx4Zp9x8YF-zaPCi5ZdrMIeMC-o_gGaOflPQYiO6IytLrsyGp-vDdTorkqGAJ9LQlYlvOdvnIU5NaJd2MXQ-cIjYC4jbFgbjCC1MroUfhHj5Ko5Zs_VsMIkvZi1Ti/7biqj69ew1sa99k/ubuntu.qcow2"
 
 clear
 
-echo -e "${YELLOW}[Warn]${RESET} Starting websockify (noVNC) on port 6080..."
+echo -e "${YELLOW}[INFO]${RESET} Starting websockify (noVNC) on port 6080..."
 sleep 2
 websockify --web=/usr/share/novnc/ 6080 localhost:5900 &
 
