@@ -58,7 +58,7 @@ clear
 
 echo -e "${YELLOW}[INFO]${RESET} Downloading Ubuntu QCOW2 image..."
 sleep 2
-wget https://download1335.mediafire.com/ylqu0hntg57gXx1mkzyQU9RLgMx6fhNv-9qGoxbrogZKfRgWq15C4UCmcrKR8rQt1YmoBsrsldo-IBSKKdlTLR_0wpFxHIYDj67qAgkuXXJfmfgJQUShps2XZYsieIiHTpJlMZFINrP2kdg2UbQHWGtsAqknlsVDN7DfAWrXlESF/7biqj69ew1sa99k/ubuntu.qcow2
+wget -O ubuntu.qcow2 "https://download1335.mediafire.com/ylqu0hntg57gXx1mkzyQU9RLgMx6fhNv-9qGoxbrogZKfRgWq15C4UCmcrKR8rQt1YmoBsrsldo-IBSKKdlTLR_0wpFxHIYDj67qAgkuXXJfmfgJQUShps2XZYsieIiHTpJlMZFINrP2kdg2UbQHWGtsAqknlsVDN7DfAWrXlESF/7biqj69ew1sa99k/ubuntu.qcow2"
 
 clear
 
