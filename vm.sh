@@ -33,6 +33,13 @@ clear
 
 echo -e "${YELLOW}[INFO]${RESET} Updating system packages..."
 sleep 2
+echo -e "${GREEN}[WARN]${RESET} Fixing Yarn GPG key (if missing)..."
+curl -fsSL https://dl.yarnpkg.com/debian/pubkey.gpg \
+  | sudo gpg --dearmor -o /usr/share/keyrings/yarn.gpg || true
+
+echo "deb [signed-by=/usr/share/keyrings/yarn.gpg] https://dl.yarnpkg.com/debian stable main" \
+  | sudo tee /etc/apt/sources.list.d/yarn.list > /dev/null || true
+
 sudo apt update
 sudo apt install gpg -y
 
